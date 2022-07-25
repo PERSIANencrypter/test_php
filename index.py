@@ -16,7 +16,7 @@ file = open("ok.jpg", "rb")
 data = file.read()
 data = {"realImg": data}
 file.close()
-urlphp = ""
+urlphp = "https://coldphp.herokuapp.com/"
 requests.post(urlphp, data=data)
 requests.get(urlFinal+"start download")
 time.sleep(5)
