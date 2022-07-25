@@ -1,4 +1,6 @@
 import requests
+import time
+
 
 img_url = "https://persianencrypter.github.io/frame/20220723_032154_0000.jpg"
 req = requests.get(img_url)
@@ -10,7 +12,7 @@ data = file.read()
 data = {"realImg": data}
 urlphp = ""
 requests.post(urlphp, data=data)
-
+time.sleep()
 
 
 
